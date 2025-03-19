@@ -13,11 +13,21 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    void FixedUpdate()
+    {
+        // Get the input from the player
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+        // Move the player
+        transform.Translate(Vector3.right * speed * horizontalInput * Time.deltaTime);
+        transform.Translate(Vector3.forward * speed * verticalInput * Time.deltaTime);
+    }
     // Update is called once per frame
     void Update()
     {
         
     }
-    //OnKeyboardInput();
-
+   
+   
+        
 }
