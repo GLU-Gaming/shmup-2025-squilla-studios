@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     // Variables 
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float lives = 3;
 
 
     void FixedUpdate()
@@ -33,8 +34,16 @@ public class PlayerMovement : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, -4.31f);
         }
     }
- //7,6 -4,31
- 
-   
-        
+    //7,6 -4,31
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            lives--;
+            
+           
+        }
+    }
+
 }
