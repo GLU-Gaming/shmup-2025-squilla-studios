@@ -18,7 +18,8 @@ public class enemy : MonoBehaviour
     
     void Update()
     {
-        transform.position = new Vector3(pos.x + Mathf.Sin(Time.time) * 2, pos.y , pos.z);
+        //transform.position = new Vector3(pos.x + Mathf.Sin(Time.time) * 2, pos.y , pos.z);
+
         transform.LookAt(target.transform);
         if (shootTimer > 0)
         {
