@@ -18,21 +18,21 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(Vector3.right * speed * horizontalInput * Time.deltaTime);
         transform.Translate(Vector3.forward * speed * verticalInput * Time.deltaTime);
         // Keep the player in the screen
-        if (transform.position.x > 8.3f)
+        if (transform.position.x > 7.32f)
         {
-            transform.position = new Vector3(8.3f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(7.32f, transform.position.y, transform.position.z);
         }
-        else if (transform.position.x < -8.3f)
+        else if (transform.position.x < -9.9f)
         {
-            transform.position = new Vector3(-8.3f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-9.9f, transform.position.y, transform.position.z);
         }
         if (transform.position.z > 7.6f)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, 7.6f);
         }
-        else if (transform.position.z < -4.31f)
+        else if (transform.position.z < -2.67f)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -4.31f);
+            transform.position = new Vector3(transform.position.x, transform.position.y, -2.67f);
         }
     }
 }
