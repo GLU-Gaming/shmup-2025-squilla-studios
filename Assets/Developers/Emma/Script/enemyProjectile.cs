@@ -10,9 +10,14 @@ public class enemyProjectile : MonoBehaviour
         bulletRb.linearVelocity = transform.forward * bulletSpeed;
         Destroy(gameObject, 3f);
     }
-
+    
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
     }
 }
