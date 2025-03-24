@@ -136,7 +136,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
 --- !u!114 &6641762134295037545
 MonoBehaviour:
@@ -150,10 +150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cc272cf72088bc4b8b1da935204d576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 6250489711041845863, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
   bulletSpawnPoint: {fileID: 2200116436282087179}
   bulletPrefab: {fileID: 5864497048795211050, guid: eafca05d4af787743adad8feed1a223e, type: 3}
   shootCooldown: 1
+  pos: {x: 0, y: 3, z: 8.33}
 --- !u!1 &4452614595133175510
 GameObject:
   m_ObjectHideFlags: 0
