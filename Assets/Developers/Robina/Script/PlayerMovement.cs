@@ -1,11 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
     // Variables 
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float lives = 3;
+
 
 
     void FixedUpdate()
@@ -27,23 +28,14 @@ public class PlayerMovement : MonoBehaviour
         }
         if (transform.position.z > 7.6f)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 7.6f); 
+            transform.position = new Vector3(transform.position.x, transform.position.y, 7.6f);
         }
         else if (transform.position.z < -4.31f)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -4.31f);
         }
     }
+}
     //7,6 -4,31
 
-    public void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Enemy")
-        {
-            lives--;
-            
-           
-        }
-    }
 
-}
