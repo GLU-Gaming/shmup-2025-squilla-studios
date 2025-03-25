@@ -1,4 +1,6 @@
+using UnityEditor.Build.Content;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Playerhealth : MonoBehaviour
 {
@@ -28,6 +30,7 @@ public class Playerhealth : MonoBehaviour
             {
                 Debug.Log("Game Over");
                 gameObject.SetActive(false);
+                SceneManager.LoadScene("GameOverScene");
             }
         }
     }
