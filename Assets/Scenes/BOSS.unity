@@ -149,10 +149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 710896091653715515, guid: 264dfb2fb0dd03742b0ab5c0bd890659, type: 3}
-  bulletLife: 1
-  speed: 1
+  bulletLife: 3.402823e+38
+  speed: 1.2
   spawnerType: 1
-  firingRate: 1
+  firingRate: 0
 --- !u!4 &426283604
 Transform:
   m_ObjectHideFlags: 0
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 1980615416}
   - component: {fileID: 1980615415}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: 'boss battle '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
