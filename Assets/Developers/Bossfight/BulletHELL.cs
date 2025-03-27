@@ -13,14 +13,14 @@ public class BulletHELL : MonoBehaviour
     public float speed = 1f;
 
 
-    private Vector2 spawnPoint;
+    //private Vector2 spawnPoint;
     private float timer = 0f;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        spawnPoint = new Vector2(transform.position.x, transform.position.y);
+       // spawnPoint = new Vector2(transform.position.x, transform.position.y);
     }
 
 
@@ -29,15 +29,16 @@ public class BulletHELL : MonoBehaviour
     {
         if (timer > bulletLife) Destroy(this.gameObject);
         timer += Time.deltaTime;
-        transform.position = Movement(timer);
+        //transform.position = Movement(timer);
+        transform.position += transform.forward * speed * Time.deltaTime;
     }
 
 
-    private Vector2 Movement(float timer)
-    {
-        // Moves right according to the bullet's rotation
-        float x = timer * speed * transform.right.x;
-        float y = timer * speed * transform.right.y;
-        return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
-    }
+    //private Vector2 Movement(float timer)
+    //{
+    //    // Moves right according to the bullet's rotation
+    //    float x = timer * speed * transform.right.x;
+    //    float y = timer * speed * transform.right.y;
+    //    return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
+    //}
 }

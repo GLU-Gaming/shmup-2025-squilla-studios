@@ -35,7 +35,7 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (spawnerType == SpawnerType.Spin) transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + 1f);
+        if (spawnerType == SpawnerType.Spin) transform.localEulerAngles = new Vector3(0f, 0f, transform.localEulerAngles.z + 1f);
         if (timer >= firingRate)
         {
             Fire();
@@ -48,10 +48,10 @@ public class Spawner : MonoBehaviour
     {
         if (bullet)
         {
-            spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+            spawnedBullet = Instantiate(bullet, transform.position, transform.rotation);
+            spawnedBullet.transform.rotation *= Quaternion.Euler(-90, 0, 0);
             spawnedBullet.GetComponent<BulletHELL>().speed = speed;
             spawnedBullet.GetComponent<BulletHELL>().bulletLife = bulletLife;
-            spawnedBullet.transform.rotation = transform.rotation;
         }
     }
 }
