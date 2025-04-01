@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    enum SpawnerType { Straight, Spin }
+    enum SpawnerType { Straight, Spin, Circle, Star }
 
 
     [Header("Bullet Attributes")]
@@ -34,15 +34,50 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        switch (spawnerType)
+        {
+            case SpawnerType.Straight:
+
+                break;
+            case SpawnerType.Spin:
+                SpinSpawnPoint();
+                break;
+            case SpawnerType.Circle:
+
+                break;
+            case SpawnerType.Star:
+
+                break;
+        }
+
+
+
+        //if (spawnerType == SpawnerType.Straight)
+        //{
+
+        //}
+        //else if (spawnerType == SpawnerType.Spin)
+        //{
+        //    timer += Time.deltaTime;
+        //    transform.localEulerAngles = new Vector3(0f, 0f, transform.localEulerAngles.z + 1f);
+        //    if (timer >= firingRate)
+        //    {
+        //        Fire();
+        //        timer = 0;
+        //    }
+        //}
+    }
+
+    private void SpinSpawnPoint()
+    {
         timer += Time.deltaTime;
-        if (spawnerType == SpawnerType.Spin) transform.localEulerAngles = new Vector3(0f, 0f, transform.localEulerAngles.z + 1f);
+        transform.localEulerAngles = new Vector3(0f, 0f, transform.localEulerAngles.z + 1f);
         if (timer >= firingRate)
         {
             Fire();
             timer = 0;
         }
     }
-
 
     private void Fire()
     {
@@ -55,3 +90,4 @@ public class Spawner : MonoBehaviour
         }
     }
 }
+//enum met verschillende patronen
