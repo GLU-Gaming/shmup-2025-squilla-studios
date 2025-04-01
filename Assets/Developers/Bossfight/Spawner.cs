@@ -37,15 +37,29 @@ public class Spawner : MonoBehaviour
         switch (spawnerType)
         {
             case SpawnerType.Straight:
-
+                Fire();
                 break;
             case SpawnerType.Spin:
                 SpinSpawnPoint();
                 break;
             case SpawnerType.Circle:
+                timer += Time.deltaTime;
+                transform.localEulerAngles = new Vector3(0f, 0f, transform.localEulerAngles.z + 1f);
+                if (timer >= firingRate)
+                {
+                    Fire();
+                    timer = 0;
+                }
 
                 break;
             case SpawnerType.Star:
+                timer += Time.deltaTime;
+                transform.localEulerAngles = new Vector3(0f, 0f, transform.localEulerAngles.z + 1f);
+                if (timer >= firingRate)
+                {
+                    Fire();
+                    timer = 0;
+                }
 
                 break;
         }
