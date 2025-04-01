@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class Boss : MonoBehaviour
+public class Boss : BaseEnemy
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void TakeDamage()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Reduce the boss's health
     }
 }
