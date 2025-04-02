@@ -193,10 +193,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6902573867230041995, guid: fc8a16f3712330648b591c6ae7d558c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d2b9a9b02dfb894984e37c3dfa75c5a, type: 2}
+    - target: {fileID: -1439730007547781893, guid: fc8a16f3712330648b591c6ae7d558c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d2b9a9b02dfb894984e37c3dfa75c5a, type: 2}
+    - target: {fileID: -682351827388122774, guid: fc8a16f3712330648b591c6ae7d558c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d2b9a9b02dfb894984e37c3dfa75c5a, type: 2}
     - target: {fileID: 919132149155446097, guid: fc8a16f3712330648b591c6ae7d558c7, type: 3}
       propertyPath: m_Name
       value: player_turtle
       objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: fc8a16f3712330648b591c6ae7d558c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d2b9a9b02dfb894984e37c3dfa75c5a, type: 2}
+    - target: {fileID: 7071182760956848314, guid: fc8a16f3712330648b591c6ae7d558c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d2b9a9b02dfb894984e37c3dfa75c5a, type: 2}
+    - target: {fileID: 7202271454713460447, guid: fc8a16f3712330648b591c6ae7d558c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d2b9a9b02dfb894984e37c3dfa75c5a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
