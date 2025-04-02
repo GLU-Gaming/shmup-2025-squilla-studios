@@ -10,8 +10,6 @@ public class enemyHealth : MonoBehaviour
     [SerializeField] public int amount = 100;
     void Start()
     {
-        score = 0;
-        ScoreText.text = "Score: " + score;
     }
 
 
@@ -35,7 +33,6 @@ public class enemyHealth : MonoBehaviour
             {
                 Destroy(gameObject);
                 score += 100;
-                ScoreText.text = "Score: " + score;
             }
         }
     }

@@ -1,9 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Bosshealth : MonoBehaviour
+public class Bosshealth : BaseEnemy
 {
     public float bosshealth = 100;
+
+    public override void TakeDamage()
+    {
+        throw new System.NotImplementedException();
+    }
 
     void OnTriggerEnter(Collider other)
     {
