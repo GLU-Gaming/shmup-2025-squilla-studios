@@ -14,7 +14,7 @@ public class Bosshealth : BaseEnemy
     {
        // Debug.Log("Collision detected with: " + other.gameObject.name);
 
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "PlayerBullet")
         {
             Debug.Log("Player collision detected");
             bosshealth--;
