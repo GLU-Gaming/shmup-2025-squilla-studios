@@ -2161,7 +2161,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 406fb5256637b8e4da24528318a0de5d, type: 2}
+  - {fileID: 2100000, guid: 50df420d0c3273946a4cef0ed1e9a0ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2470,8 +2470,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2253684494648353350}
   - {fileID: 6353275694359827380}
@@ -2491,8 +2491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   bulletSpawnPoint: {fileID: 6353275694359827380}
-  bulletPrefab: {fileID: 5864497048795211050, guid: eafca05d4af787743adad8feed1a223e, type: 3}
-  shootCooldown: 1
+  bulletPrefab: {fileID: 9036047035511676384, guid: a0410fc0723475a4099df45c1dd83504, type: 3}
+  shootCooldown: 0.7
   pos: {x: 0, y: 3, z: 8}
 --- !u!65 &1236426550290032360
 BoxCollider:
