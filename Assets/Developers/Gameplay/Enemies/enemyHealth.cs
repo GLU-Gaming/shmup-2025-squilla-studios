@@ -8,25 +8,16 @@ public class enemyHealth : MonoBehaviour
     [SerializeField] public int score;
     [SerializeField] private TextMeshProUGUI ScoreText;
     [SerializeField] public int amount = 100;
-    void Start()
+ 
+    private void OnTriggerEnter(Collider other)
     {
-    }
+        Debug.Log("Collision detected with: " + other.gameObject.name);
 
-
-    void Update()
-    {
-
-    }
-
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Collision detected with: " + collision.gameObject.name);
-
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
 
             lives--;
+            Destroy(other.gameObject);
             Debug.Log("Lives remaining: " + lives);
 
             if (lives <= 0)
