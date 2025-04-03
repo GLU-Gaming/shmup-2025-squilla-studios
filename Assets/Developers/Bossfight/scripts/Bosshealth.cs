@@ -50,7 +50,7 @@ public class Bosshealth : BaseEnemy
 
             if (bosshealth <= 0)
             {
-                
+                SceneManager.LoadScene("EndScene");
                 gameObject.SetActive(false);
             
             }
