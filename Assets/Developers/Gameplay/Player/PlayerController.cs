@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
         shootCountdown -= Time.deltaTime;
     }
 
-    private void TakeDamage()
+    public void TakeDamage()
     {
         if (invincibilityCountdown > 0)
         {

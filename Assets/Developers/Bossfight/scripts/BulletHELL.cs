@@ -41,4 +41,25 @@ public class BulletHELL : MonoBehaviour
     //    float y = timer * speed * transform.right.y;
     //    return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
     //}
+
+    public void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Destroy the bullet
+            Destroy(this.gameObject);
+            // Call the function to deal damage to the player
+            Debug.Log("Hit the Player");
+            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+            if (player != null)
+            {
+                player.TakeDamage();
+            }
+        }
+
+
+
+    }
 }
+
+
