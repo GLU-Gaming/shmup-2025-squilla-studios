@@ -24,13 +24,13 @@ MonoBehaviour:
     m_Value: 0.44
   scatter:
     m_OverrideState: 1
-    m_Value: 0.433
+    m_Value: 0.684
   clamp:
     m_OverrideState: 1
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.1187504, b: 0, a: 1}
+    m_Value: {r: 1, g: 0.71315616, b: 0.65723264, a: 1}
   highQualityFiltering:
     m_OverrideState: 1
     m_Value: 0
@@ -76,11 +76,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   lift:
-    m_OverrideState: 0
-    m_Value: {x: 0.9736846, y: 1, z: 0.99999976, w: -6.0821065e-10}
+    m_OverrideState: 1
+    m_Value: {x: 0.8432738, y: 1, z: 0.9633358, w: -0.12244898}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 0.5607218, y: 0.77426213, z: 1, w: -0.013605254}
+    m_Value: {x: 0.69098425, y: 0.82183975, z: 1, w: 0.17687085}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.5725589, y: 0.7669618, z: 1, w: 0.63265365}
+    m_Value: {x: 0.5208242, y: 0.81033075, z: 1, w: 0.67346996}

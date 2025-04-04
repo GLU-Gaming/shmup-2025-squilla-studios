@@ -12,5 +12,8 @@ public abstract class BaseEnemy : MonoBehaviour
         }
     }
 
-    public abstract void TakeDamage();
+    public virtual void TakeDamage()
+    {
+
+    }
 }

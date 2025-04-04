@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8562962925768851019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3174355194735829940}
+  - component: {fileID: 8476744202331955689}
+  - component: {fileID: 8614797171775069604}
+  - component: {fileID: 2158225684996764397}
+  m_Layer: 0
+  m_Name: crab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3174355194735829940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562962925768851019}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.08, y: -2.59, z: 10.98}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5437296025232204216}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8476744202331955689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562962925768851019}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 19.670275, y: 15.002765, z: 9.426952}
+  m_Center: {x: 0.816411, y: 1.3846278, z: 0.096660614}
+--- !u!114 &8614797171775069604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562962925768851019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd9a3258db15f54b8941b3e950edfa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2158225684996764397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562962925768851019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b077a92e454c6b4f9f2e79e7748a1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bosshealth: 100
+  mouth: {fileID: 0}
+  claw1: {fileID: 0}
+  claw2: {fileID: 0}
+  leg1: {fileID: 0}
+  leg2: {fileID: 0}
+--- !u!1001 &2728388071378459766
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3174355194735829940}
+    m_Modifications:
+    - target: {fileID: 7341950682616211316, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_Name
+      value: crab boss_shmupfbx 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341950682616211316, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70652246
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.02697778
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70659196
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.02874128
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.143
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 4.516
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+--- !u!4 &5437296025232204216 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7973633669396364750, guid: 77707ead7b6f2cc4eadec4b940ed58b9, type: 3}
+  m_PrefabInstance: {fileID: 2728388071378459766}
+  m_PrefabAsset: {fileID: 0}
