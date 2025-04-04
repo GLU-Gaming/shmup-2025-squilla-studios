@@ -30,6 +30,10 @@ public class Worldexplorer : MonoBehaviour
         if (BossActive == true)
         {
             transform.Translate(Vector3.back * speed * Time.deltaTime);
+            if (transform.position.z <= -18.1f)
+            {
+                speed = 0;
+            }
 
         }
     }
