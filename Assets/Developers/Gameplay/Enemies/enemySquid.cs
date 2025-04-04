@@ -1,8 +1,8 @@
 using UnityEngine;
-using UnityEngine.AI;
 
-public class enemy : MonoBehaviour
+public class enemySquid : BaseEnemy
 {
+
     [SerializeField] private GameObject target;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private GameObject bulletPrefab;
@@ -14,8 +14,8 @@ public class enemy : MonoBehaviour
     {
         shootCooldown = Random.Range(1.0f, 1.7f);
     }
-     
-    
+
+
     void Update()
     {
         transform.LookAt(target.transform);
