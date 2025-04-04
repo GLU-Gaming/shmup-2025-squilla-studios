@@ -86,6 +86,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage()
     {
+        Debug.Log("Hit");
         if (invincibilityCountdown > 0)
         {
             return;
