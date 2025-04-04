@@ -13,7 +13,7 @@ public class enemyHealth : MonoBehaviour
     {
         Debug.Log("Collision detected with: " + other.gameObject.name);
 
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("PlayerBullet"))
         {
 
             lives--;
