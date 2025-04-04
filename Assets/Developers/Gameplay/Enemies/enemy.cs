@@ -13,6 +13,7 @@ public class enemy : MonoBehaviour
     void Start()
     {
         shootCooldown = Random.Range(1.0f, 1.7f);
+        transform.LookAt(target.transform);
     }
      
     
@@ -26,6 +27,8 @@ public class enemy : MonoBehaviour
 
         if (shootTimer <= 0)
         {
+            
+            
             Shoot();
             shootTimer = shootCooldown;
         }
