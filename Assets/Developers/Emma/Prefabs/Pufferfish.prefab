@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 187f4bdbc798ac94089eaba0d95423c3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.85
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 187f4bdbc798ac94089eaba0d95423c3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 187f4bdbc798ac94089eaba0d95423c3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 187f4bdbc798ac94089eaba0d95423c3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -131,10 +131,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  player: {fileID: 7423159148169383658, guid: ad3622b13e617344aa057f274df7f4d1, type: 3}
+  player: {fileID: 7269832787101779087, guid: ad3622b13e617344aa057f274df7f4d1, type: 3}
   enemy: {fileID: 4775470862379488447}
   targetPosition: {x: 0, y: 0, z: 0}
   moveSpeed: 5
+  colls: []
 --- !u!54 &7663538163420056536
 Rigidbody:
   m_ObjectHideFlags: 0
