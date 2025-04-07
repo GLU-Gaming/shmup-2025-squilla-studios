@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 public class enemy : MonoBehaviour
 {
-    [SerializeField] private GameObject target;
+    private GameObject target;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private GameObject bulletPrefab;
     private float shootTimer = 2f;
@@ -13,6 +13,7 @@ public class enemy : MonoBehaviour
     void Start()
     {
         shootCooldown = Random.Range(1.0f, 1.7f);
+        target = FindFirstObjectByType<PlayerController>().gameObject;
         transform.LookAt(target.transform);
     }
      
