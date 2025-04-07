@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     [System.Serializable]
     public class Wave
     {
-        public GameObject[] enemyTypes; 
+        public GameObject[] enemyTypes;
         public int enemyCount;
     }
 
@@ -37,7 +37,7 @@ public class EnemySpawner : MonoBehaviour
 
             int spawnCount = Mathf.Min(wave.enemyCount, spawnPoints.Length);
 
-            
+            // Shuffle spawn points
             List<Transform> shuffledSpawns = new List<Transform>(spawnPoints);
             for (int i = 0; i < shuffledSpawns.Count; i++)
             {
@@ -47,7 +47,6 @@ public class EnemySpawner : MonoBehaviour
                 shuffledSpawns[randIndex] = temp;
             }
 
-           
             for (int i = 0; i < spawnCount; i++)
             {
                 Transform spawnLocation = shuffledSpawns[i];
@@ -55,7 +54,7 @@ public class EnemySpawner : MonoBehaviour
 
                 GameObject enemy = Instantiate(enemyPrefab, spawnLocation.position, Quaternion.identity);
                 enemy.tag = "Enemy";
-                enemy.SetActive(true); 
+                enemy.SetActive(true);
                 StartCoroutine(MoveIntoFrame(enemy.transform));
             }
 
@@ -67,7 +66,6 @@ public class EnemySpawner : MonoBehaviour
         }
         else
         {
-           
             GameObject boss = Instantiate(bossPrefab, bossSpawnPoint.position, Quaternion.identity);
             boss.tag = "Enemy";
             boss.SetActive(true);
@@ -104,7 +102,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (enemy == null) yield break;
 
-        Vector3 targetPos = enemy.position + new Vector3(0, 0, -2f); 
+        Vector3 targetPos = enemy.position + new Vector3(0, 0, -5f);
 
         while (enemy != null && Vector3.Distance(enemy.position, targetPos) > 0.1f)
         {
