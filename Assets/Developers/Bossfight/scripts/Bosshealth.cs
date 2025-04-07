@@ -7,6 +7,7 @@ public class Bosshealth : BaseEnemy
     [SerializeField] public GameObject BossDyingParticle; 
     [SerializeField] public GameObject BossDyingParticle1;
     [SerializeField] public GameObject BossDyingParticle2;
+    [SerializeField] public GameObject Bossexplodes;
     public Spawner mouth;
     public Spawner claw1;
     public Spawner claw2;
@@ -53,6 +54,14 @@ public class Bosshealth : BaseEnemy
             if (bosshealth <= 75)
             {
                 Instantiate(BossDyingParticle, transform.position, transform.rotation);
+            }
+            if (bosshealth <= 50)
+            {
+                Instantiate(BossDyingParticle1, transform.position, transform.rotation);
+            }
+            if (bosshealth <= 25)
+            {
+                Instantiate(BossDyingParticle2, transform.position, transform.rotation);
             }
 
             if (bosshealth <= 0)

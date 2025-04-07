@@ -230,7 +230,7 @@ MonoBehaviour:
   bulletLife: 10
   speed: 2
   spawnerType: 1
-  firingRate: 0.25
+  firingRate: 0.3
 --- !u!1 &2474688569940246252
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
   bulletLife: 10
   speed: 2
   spawnerType: 1
-  firingRate: 0.25
+  firingRate: 0.3
 --- !u!1 &3312962476791382274
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +539,7 @@ MonoBehaviour:
   bulletLife: 10
   speed: 2
   spawnerType: 1
-  firingRate: 0.25
+  firingRate: 0.3
 --- !u!1 &3432654197191124839
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +809,7 @@ MonoBehaviour:
   bulletLife: 10
   speed: 2
   spawnerType: 1
-  firingRate: 0.25
+  firingRate: 0.3
 --- !u!1 &4998412918076562202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   bulletLife: 10
   speed: 2
   spawnerType: 0
-  firingRate: 0.9
+  firingRate: 0.3
 --- !u!1 &7064256957483303776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   bulletLife: 10
   speed: 2
   spawnerType: 0
-  firingRate: 0.9
+  firingRate: 0.3
 --- !u!1 &7363810520122438449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   bulletLife: 10
   speed: 2
   spawnerType: 0
-  firingRate: 0.9
+  firingRate: 0.3
 --- !u!1 &7797806737081712712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,6 +1499,7 @@ MonoBehaviour:
   BossDyingParticle: {fileID: 8533030673395433465, guid: 51f3083611080fb48ac7d55342559d53, type: 3}
   BossDyingParticle1: {fileID: 0}
   BossDyingParticle2: {fileID: 0}
+  Bossexplodes: {fileID: 0}
   mouth: {fileID: 4281941631515280403}
   claw1: {fileID: 6017223496973647267}
   claw2: {fileID: 1108240452744312076}
