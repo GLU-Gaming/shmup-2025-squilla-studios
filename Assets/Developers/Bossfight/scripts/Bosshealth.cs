@@ -4,7 +4,9 @@ using UnityEngine.SceneManagement;
 public class Bosshealth : BaseEnemy
 {
     public float bosshealth = 100;
-
+    [SerializeField] public GameObject BossDyingParticle; 
+    [SerializeField] public GameObject BossDyingParticle1;
+    [SerializeField] public GameObject BossDyingParticle2;
     public Spawner mouth;
     public Spawner claw1;
     public Spawner claw2;
@@ -47,6 +49,11 @@ public class Bosshealth : BaseEnemy
             Debug.Log("Player collision detected");
             bosshealth = bosshealth - 2;
             Debug.Log("remaining: " + bosshealth);
+            
+            if (bosshealth <= 75)
+            {
+                Instantiate(BossDyingParticle, transform.position, transform.rotation);
+            }
 
             if (bosshealth <= 0)
             {
