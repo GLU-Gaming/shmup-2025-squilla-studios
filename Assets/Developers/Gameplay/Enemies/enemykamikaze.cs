@@ -6,13 +6,15 @@ using UnityEngine.UIElements;
 public class enemykamikaze : BaseEnemy
 {
     public PlayerController controller;
-    [SerializeField] private GameObject player;
+    [SerializeField] private PlayerController player;
     [SerializeField] private GameObject enemy;
     public Vector3 targetPosition;
     public float moveSpeed;
+
+    public Collider[] colls;
     void Start()
     {
-        player = FindFirstObjectByType<PlayerController>().gameObject;
+        player = FindFirstObjectByType<PlayerController>();
         targetPosition = player.transform.position;
     }
 
@@ -30,22 +32,23 @@ public class enemykamikaze : BaseEnemy
         {
             //Gebruik Physics.OverlapSphere() om een array van colliders te krijgen
             //gebruik een for loop op die array om damage te doen aan de speler
-           
-            
+
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1);
+            colls = hitColliders;
+            for (int i = 0; i < hitColliders.Length; i++)
+            {
+                Debug.Log("explosion");
+                if (hitColliders[i].CompareTag("Player"))
+                {
+                    player.TakeDamage();
+                }
+            }
+
             Destroy(gameObject);
         }
     }
 
-    void Explosion(Vector3 center,float radius)
-    {
-
-        
-        
-        
-            
-        
-       
-    }
+    
     
 
     
