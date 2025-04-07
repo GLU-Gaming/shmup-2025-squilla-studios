@@ -5,6 +5,7 @@ public class Worldexplorer : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
     public bool BossActive = false;
+    [SerializeField] private GameObject Trench;
 
     void Start()
     {
