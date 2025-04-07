@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &45437522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6250489711041845863, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-  m_PrefabInstance: {fileID: 1992322704202526756}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &245891565
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +741,7 @@ PrefabInstance:
     - target: {fileID: 6986805545440699019, guid: a4ea40ee12a01d245bdc9b84460cc53f, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 45437522}
+      objectReference: {fileID: 0}
     - target: {fileID: 8818515398813034379, guid: a4ea40ee12a01d245bdc9b84460cc53f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6181803
@@ -853,75 +848,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88b47b401d677d1439821e225b8c1007, type: 3}
---- !u!1001 &1992322704202526756
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2031317989768688002, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2031317989768688002, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2031317989768688002, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4096366242235780747, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6250489711041845863, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
-      propertyPath: m_Name
-      value: Supercoolturtlegameobject
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2019af197a782a34eaaa595a53d227bb, type: 3}
 --- !u!1001 &2172238867566677589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1042,7 +968,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1045568816}
   - {fileID: 1994220322}
-  - {fileID: 1992322704202526756}
   - {fileID: 2068488853}
   - {fileID: 2018306093}
   - {fileID: 245891568}
