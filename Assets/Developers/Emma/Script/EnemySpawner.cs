@@ -22,7 +22,7 @@ public class EnemySpawner : MonoBehaviour
     private int currentWave = 0;
     private bool spawning = false;
     private bool checkingForEnemies = false;
-    private Worldexplorer world;
+    
 
     void Start()
     {
@@ -67,13 +67,14 @@ public class EnemySpawner : MonoBehaviour
             Debug.Log("Wave " + currentWave + " spawned.");
         }
         else
-        {
+        {   
+            //World.BossActive = true; 
             GameObject boss = Instantiate(bossPrefab, bossSpawnPoint.position, Quaternion.identity);
             boss.tag = "Enemy";
             boss.SetActive(true);
             StartCoroutine(MoveIntoFrame(boss.transform));
             Debug.Log("Boss spawned!");
-            world.BossActive = true; 
+             
         }
 
         yield return null;
