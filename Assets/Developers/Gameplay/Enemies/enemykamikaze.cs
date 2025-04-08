@@ -44,7 +44,7 @@ public class enemykamikaze : BaseEnemy
                     player.TakeDamage();
                 }
             }
-           // Instantiate(DeathParticle, transform.position, transform.rotation);
+            Instantiate(DeathParticle, transform.position, transform.rotation);
 
             Destroy(gameObject);
             

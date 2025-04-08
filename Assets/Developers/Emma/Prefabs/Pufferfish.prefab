@@ -135,6 +135,7 @@ MonoBehaviour:
   enemy: {fileID: 4775470862379488447}
   targetPosition: {x: 0, y: 0, z: 0}
   moveSpeed: 5
+  DeathParticle: {fileID: 7670099046534314719, guid: f3eee18a38ed74f498d793876945cfd9, type: 3}
   colls: []
 --- !u!54 &7663538163420056536
 Rigidbody:
@@ -197,6 +198,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 1
-  score: 0
   ScoreText: {fileID: 0}
   amount: 100
+  DeathParticle: {fileID: 0}
