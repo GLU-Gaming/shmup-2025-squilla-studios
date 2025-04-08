@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed = 5f;
 
     [Header("Health")]
-    [SerializeField] private int health = 3;
+    public int health = 3;
     [SerializeField] private float invincibilityDuration = 3;
     private float invincibilityCountdown = 0;
     

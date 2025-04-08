@@ -24,11 +24,15 @@ public class EnemySpawner : MonoBehaviour
     private bool spawning = false;
     private bool checkingForEnemies = false;
     private Worldexplorer[] World;
+    private PlayerController health;
+    private healthui healthUI;
 
     void Start()
     {
         StartCoroutine(SpawnWave());
         World = FindObjectsByType<Worldexplorer>(FindObjectsSortMode.None);
+        health = FindFirstObjectByType<PlayerController>();
+        healthUI = FindFirstObjectByType<healthui>();
     }
 
     IEnumerator SpawnWave()
@@ -78,7 +82,8 @@ public class EnemySpawner : MonoBehaviour
             boss.SetActive(true);
             StartCoroutine(MoveIntoFrameEnemy(boss.transform));
             Debug.Log("Boss spawned!");
-            
+            health.health = 3;
+            healthUI.SetHealth(3);
         }
 
         yield return null;
