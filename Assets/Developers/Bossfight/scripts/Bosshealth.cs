@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,13 @@ public class Bosshealth : BaseEnemy
     public Spawner claw2;
     public Spawner leg1;
     public Spawner leg2;
+    private EnemyhealthUI UI;
+    private void Start()
+    {
+        UI = FindFirstObjectByType<EnemyhealthUI>();
+    }
+
+   
 
     private void Update()
     {
@@ -32,6 +40,11 @@ public class Bosshealth : BaseEnemy
         {
             leg1.enabled = true;
             leg2.enabled = true;
+            UI.spritechange1();
+        }
+        if (bosshealth <= 25)
+        {
+            UI.spritechange2();
         }
 
     }
