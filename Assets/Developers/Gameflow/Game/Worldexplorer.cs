@@ -34,6 +34,7 @@ public class Worldexplorer : MonoBehaviour
             if (transform.position.z <= -18.1f)
             {
                 speed = 0;
+              
             }
 
         }
