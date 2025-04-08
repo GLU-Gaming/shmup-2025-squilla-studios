@@ -10,13 +10,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int health = 3;
     [SerializeField] private float invincibilityDuration = 3;
     private float invincibilityCountdown = 0;
-
+    
     [Header("Shooting")]
     [SerializeField] private float shootCountdownDuration = 0.5f;
     private float shootCountdown = 0;
     [SerializeField] private GameObject BulletPrefab;
     [SerializeField] private Transform BulletSpawnPoint;
     private int timesShot = 0;
+    private healthui healthui;
+
+    private void Start()
+    {
+        healthui = FindFirstObjectByType<healthui>();
+    }
 
     private void Update()
     {
@@ -92,6 +98,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
         health--;
+        healthui.SetHealth(health);
         invincibilityCountdown = invincibilityDuration;
         if (health <= 0)
         {

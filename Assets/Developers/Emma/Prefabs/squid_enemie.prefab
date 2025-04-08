@@ -242,7 +242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc0741a9c2859444add279e70f77773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 7423159148169383658, guid: ad3622b13e617344aa057f274df7f4d1, type: 3}
   bulletSpawnPoint: {fileID: 6397050890838641772}
   bulletPrefab: {fileID: 5223527573051511412, guid: 3864cfb32b89d3a4da2e01ad844d0418, type: 3}
   shootCooldown: 0.7
@@ -260,9 +259,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 1
-  score: 0
   ScoreText: {fileID: 0}
   amount: 100
+  DeathParticle: {fileID: 7670099046534314719, guid: f3eee18a38ed74f498d793876945cfd9, type: 3}
 --- !u!65 &5109743348014658692
 BoxCollider:
   m_ObjectHideFlags: 0
