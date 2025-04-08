@@ -10,6 +10,7 @@ public class enemykamikaze : BaseEnemy
     [SerializeField] private GameObject enemy;
     public Vector3 targetPosition;
     public float moveSpeed;
+    [SerializeField] private GameObject DeathParticle;
 
     public Collider[] colls;
     void Start()
@@ -43,8 +44,10 @@ public class enemykamikaze : BaseEnemy
                     player.TakeDamage();
                 }
             }
+           // Instantiate(DeathParticle, transform.position, transform.rotation);
 
             Destroy(gameObject);
+            
         }
     }
 
