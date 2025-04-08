@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemyHealth : MonoBehaviour
 {
     [SerializeField] private float lives = 1;
-    [SerializeField] public int score;
+ 
     [SerializeField] private TextMeshProUGUI ScoreText;
     [SerializeField] public int amount = 100;
  
@@ -23,7 +23,7 @@ public class enemyHealth : MonoBehaviour
             if (lives <= 0)
             {
                 Destroy(gameObject);
-                score += 100;
+                score.AddScore(100);
             }
         }
     }
