@@ -115,7 +115,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (enemy == null) yield break;
 
-        Vector3 targetPos = enemy.position + new Vector3(0, 0, -5f);
+        Vector3 targetPos = enemy.position + new Vector3(0, 0, -10f);
 
         while (enemy != null && Vector3.Distance(enemy.position, targetPos) > 0.1f)
         {
