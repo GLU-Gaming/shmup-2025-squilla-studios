@@ -22,10 +22,12 @@ public class EnemySpawner : MonoBehaviour
     private int currentWave = 0;
     private bool spawning = false;
     private bool checkingForEnemies = false;
+    
 
     void Start()
     {
         StartCoroutine(SpawnWave());
+
     }
 
     IEnumerator SpawnWave()
@@ -65,12 +67,14 @@ public class EnemySpawner : MonoBehaviour
             Debug.Log("Wave " + currentWave + " spawned.");
         }
         else
-        {
+        {   
+            //World.BossActive = true; 
             GameObject boss = Instantiate(bossPrefab, bossSpawnPoint.position, Quaternion.identity);
             boss.tag = "Enemy";
             boss.SetActive(true);
             StartCoroutine(MoveIntoFrame(boss.transform));
             Debug.Log("Boss spawned!");
+             
         }
 
         yield return null;
@@ -91,7 +95,7 @@ public class EnemySpawner : MonoBehaviour
             Debug.Log("Enemies remaining: " + enemyCount);
         }
     }
-
+     
     IEnumerator StartNextWaveAfterDelay()
     {
         yield return new WaitForSeconds(waveDelay);

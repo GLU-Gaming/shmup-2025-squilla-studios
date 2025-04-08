@@ -5,6 +5,7 @@ public class Worldexplorer : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
     public bool BossActive = false;
+    [SerializeField] private GameObject Trench;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class Worldexplorer : MonoBehaviour
             if (transform.position.z <= -18.1f)
             {
                 speed = 0;
+              
             }
 
         }
