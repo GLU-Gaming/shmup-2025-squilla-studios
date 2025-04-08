@@ -17,17 +17,18 @@ public class EnemySpawner : MonoBehaviour
     public Transform bossSpawnPoint;
 
     public float enemyMoveSpeed = 1f;
+    public float bossEnemyMoveSpeed = 5f;
     public float waveDelay = 3f;
 
     private int currentWave = 0;
     private bool spawning = false;
     private bool checkingForEnemies = false;
-    
+    private Worldexplorer[] World;
 
     void Start()
     {
         StartCoroutine(SpawnWave());
-
+        World = FindObjectsByType<Worldexplorer>(FindObjectsSortMode.None);
     }
 
     IEnumerator SpawnWave()
@@ -67,14 +68,17 @@ public class EnemySpawner : MonoBehaviour
             Debug.Log("Wave " + currentWave + " spawned.");
         }
         else
-        {   
-            //World.BossActive = true; 
+        {
+            foreach (Worldexplorer item in World)
+            {
+                item.BossActive = true;
+            }
             GameObject boss = Instantiate(bossPrefab, bossSpawnPoint.position, Quaternion.identity);
             boss.tag = "Enemy";
             boss.SetActive(true);
-            StartCoroutine(MoveIntoFrame(boss.transform));
+            StartCoroutine(MoveIntoFrameEnemy(boss.transform));
             Debug.Log("Boss spawned!");
-             
+            
         }
 
         yield return null;
@@ -111,6 +115,19 @@ public class EnemySpawner : MonoBehaviour
         while (enemy != null && Vector3.Distance(enemy.position, targetPos) > 0.1f)
         {
             enemy.position = Vector3.MoveTowards(enemy.position, targetPos, enemyMoveSpeed * Time.deltaTime);
+            yield return null;
+        }
+    }
+
+    IEnumerator MoveIntoFrameEnemy(Transform enemy)
+    {
+        if (enemy == null) yield break;
+
+        Vector3 targetPos = enemy.position + new Vector3(0, 0, -82f);
+
+        while (enemy != null && Vector3.Distance(enemy.position, targetPos) > 0.1f)
+        {
+            enemy.position = Vector3.MoveTowards(enemy.position, targetPos, bossEnemyMoveSpeed * Time.deltaTime);
             yield return null;
         }
     }
