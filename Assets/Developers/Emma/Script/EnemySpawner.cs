@@ -22,10 +22,12 @@ public class EnemySpawner : MonoBehaviour
     private int currentWave = 0;
     private bool spawning = false;
     private bool checkingForEnemies = false;
+    private Worldexplorer world;
 
     void Start()
     {
         StartCoroutine(SpawnWave());
+
     }
 
     IEnumerator SpawnWave()
@@ -71,6 +73,7 @@ public class EnemySpawner : MonoBehaviour
             boss.SetActive(true);
             StartCoroutine(MoveIntoFrame(boss.transform));
             Debug.Log("Boss spawned!");
+            world.BossActive = true; 
         }
 
         yield return null;
