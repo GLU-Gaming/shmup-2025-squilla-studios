@@ -39,7 +39,7 @@ public class score : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + Score;
+            scoreText.text = " " + Score;
         }
         else
         {
